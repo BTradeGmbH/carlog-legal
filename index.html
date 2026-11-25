@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CarLog – Datenschutz, Support, Impressum</title>
+<meta name="description" content="CarLog – Tank- & Ladebuch für iPhone. Datenschutzerklärung, Support und Impressum.">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<style>
+  /* Systemschriften, keine Schriften oder Skripte von Dritten (kein Tracking) */
+  :root {
+    --bg: #F5F6F9; --surface: #FFFFFF; --fg: #15171C; --muted: #5A5F6B; --line: #DDE0E7;
+    --fuel: #B85C00; --charge: #0062CC;
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0F1320; --surface: #171B29; --fg: #EEF0F5; --muted: #A3A8B5; --line: #2A3042; --fuel: #FFB340; --charge: #64B5FF; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font); font-size: 16px; line-height: 1.6; }
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 2.5rem 16px 4rem; display: flex; flex-direction: column; gap: 2.5rem; }
+  header { display: flex; flex-direction: column; gap: 1rem; }
+  .brand { display: flex; align-items: center; gap: 0.9rem; }
+  .brand img { width: 56px; height: 56px; border-radius: 13px; flex: none; }
+  .brand h1 { font-size: 1.9rem; line-height: 1.1; margin: 0; letter-spacing: -0.01em; }
+  .brand p { margin: 0.15rem 0 0; color: var(--muted); font-size: 0.95rem; }
+  nav { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }
+  nav a { color: var(--fg); text-decoration: none; font-size: 0.9rem; font-weight: 500; padding: 0.4rem 0.85rem; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); }
+  nav a:hover, nav a:focus-visible { border-color: var(--charge); outline: none; }
+  nav .lang { margin-left: auto; }
+  section { display: flex; flex-direction: column; gap: 0.9rem; scroll-margin-top: 1rem; }
+  h2 { font-size: 1.45rem; margin: 0; }
+  h3 { font-size: 1rem; font-weight: 600; margin: 0.6rem 0 0; }
+  p, li { margin: 0; }
+  ul { margin: 0; padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.35rem; }
+  a { color: var(--charge); }
+  .meta { color: var(--muted); font-size: 0.85rem; }
+  .table { border: 1px solid var(--line); border-radius: 12px; background: var(--surface); overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+  th, td { text-align: left; padding: 0.65rem 0.9rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  th { color: var(--muted); font-weight: 500; font-size: 0.8rem; letter-spacing: 0.04em; text-transform: uppercase; }
+  .tag { display: inline-block; font-size: 0.78rem; font-weight: 600; padding: 0.05rem 0.5rem; border-radius: 999px; border: 1px solid currentColor; white-space: nowrap; }
+  .local { color: var(--charge); }
+  .opt { color: var(--fuel); }
+  .contact { font-size: 1.15rem; font-weight: 600; }
+  hr { border: none; border-top: 1px solid var(--line); margin: 0; }
+  footer { color: var(--muted); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <img src="icon.png" alt="" width="56" height="56">
+      <div>
+        <h1>CarLog</h1>
+        <p>Tank- &amp; Ladebuch für iPhone</p>
+      </div>
+    </div>
+    <nav aria-label="Seiten">
+      <a href="#datenschutz">Datenschutz</a>
+      <a href="#support">Support</a>
+      <a href="#impressum">Impressum</a>
+      <a class="lang" href="en/" hreflang="en" lang="en">English</a>
+    </nav>
+  </header>
+
+  <main>
+  <section id="datenschutz">
+    <h2>Datenschutzerklärung</h2>
+    <p class="meta">Stand: 25. November 2026</p>
+    <p>CarLog funktioniert ohne Konto. Solange du den Sync nicht einschaltest, bleiben alle deine Daten auf deinem iPhone. Wir sehen sie nicht, wir verkaufen nichts und wir zeigen keine Werbung.</p>
+
+    <div class="table">
+      <table>
+        <thead><tr><th>Daten</th><th>Wo sie liegen</th><th>Wofür</th></tr></thead>
+        <tbody>
+          <tr><td>Fahrzeuge, Tank- und Ladeeinträge, Ladeorte</td><td><span class="tag local">nur iPhone</span></td><td>Kosten und Verbrauch berechnen</td></tr>
+          <tr><td>Standort beim Erfassen einer Ladung</td><td><span class="tag local">nur iPhone</span></td><td>Ladeort «Zuhause» erkennen; wird nicht gespeichert, nur verglichen</td></tr>
+          <tr><td>E-Mail-Adresse</td><td><span class="tag opt">nur mit Sync</span><br>Server in der Schweiz</td><td>Anmeldung mit Einmalcode</td></tr>
+          <tr><td>Kopie deiner Fahrzeuge, Einträge und Ladeorte</td><td><span class="tag opt">nur mit Sync</span><br>Server in der Schweiz</td><td>Datensicherung und Abgleich zwischen deinen Geräten</td></tr>
+          <tr><td>Kaufstatus von CarLog Pro und eine zufällige Kennung</td><td><span class="tag opt">nur mit Pro</span><br>App Store und Abo-Dienstleister</td><td>Pro freischalten; keine Zahlungsdaten</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Ohne Konto</h3>
+    <p>Die Daten liegen in einer Datenbank in der App. Sie sind im iCloud-Backup deines iPhones enthalten, wenn du dieses eingeschaltet hast. Dafür gilt die Datenschutzerklärung von Apple.</p>
+
+    <h3>Mit Sync (freiwillig)</h3>
+    <p>Wenn du dich anmeldest, speichern wir deine E-Mail-Adresse und eine Kopie deiner Daten bei einem Hosting-Dienstleister mit Rechenzentrum in der Schweiz. Den Anmeldecode verschickt ein E-Mail-Dienstleister in der EU in unserem Auftrag. Jedes Konto sieht nur die eigenen Daten. Die Übertragung ist verschlüsselt.</p>
+
+    <h3>Abo</h3>
+    <p>Die ersten 10 Einträge sind gratis. Ab dem 11. Eintrag und für den Sync braucht es CarLog Pro (Jahresabo, in der Schweiz CHF 5 pro Jahr). Die Zahlung läuft vollständig über Apple. Wir erhalten keine Zahlungsdaten. Ein Dienstleister für die Abo-Verwaltung (Sitz in den USA) verarbeitet eine zufällige Kennung und den Kaufstatus, damit die App weiss, ob Pro aktiv ist. Mit allen Dienstleistern bestehen Verträge zur Auftragsverarbeitung; für die USA gelten die Standardvertragsklauseln.</p>
+
+    <h3>Kein Tracking</h3>
+    <p>CarLog enthält keine Werbung, keine Analyse-Werkzeuge und kein Tracking über Apps oder Webseiten hinweg. Auch diese Webseite lädt nichts von Dritten.</p>
+
+    <h3>Löschen und deine Rechte</h3>
+    <ul>
+      <li>Daten auf dem iPhone löschst du, indem du die App löschst.</li>
+      <li>Dein Konto samt allen Daten auf dem Server löschst du in der App unter Einstellungen → Sync → Konto löschen.</li>
+      <li>Du hast das Recht auf Auskunft, Berichtigung und Löschung nach dem Schweizer Datenschutzgesetz und, wo anwendbar, der DSGVO. Schreib uns dafür an die Adresse unten.</li>
+    </ul>
+  </section>
+  </main>
+
+  <hr>
+
+  <section id="support">
+    <h2>Support</h2>
+    <p>Fragen, Fehler oder Wünsche? Schreib uns, wir antworten in der Regel innert zwei Arbeitstagen.</p>
+    <p class="contact"><a href="mailto:carlog@b-trade.ch">carlog@b-trade.ch</a></p>
+    <h3>Häufige Fragen</h3>
+    <ul>
+      <li><strong>Wie sichere ich meine Daten?</strong> Mit CarLog Pro: Einstellungen → Sync → Anmelden und synchronisieren. Danach sind deine Daten auf einem Server in der Schweiz gesichert. Ohne Abo bleiben sie im iCloud-Backup deines iPhones.</li>
+      <li><strong>Neues iPhone?</strong> CarLog installieren und unter Einstellungen → Sync mit derselben E-Mail-Adresse anmelden. Deine Daten kommen automatisch zurück.</li>
+      <li><strong>Abo kündigen?</strong> iPhone-Einstellungen → dein Name → Abonnements → CarLog.</li>
+      <li><strong>Warum ist «Verbraucht» anders als «Ausgegeben»?</strong> «Ausgegeben» ist, was du bezahlt hast. «Verbraucht» schätzt, was deine gefahrenen Kilometer gekostet haben.</li>
+    </ul>
+  </section>
+
+  <hr>
+
+  <section id="impressum">
+    <h2>Impressum</h2>
+    <p>B-Trade GmbH<br>Grabenstrasse 14<br>6300 Zug, Schweiz</p>
+    <p>E-Mail: <a href="mailto:carlog@b-trade.ch">carlog@b-trade.ch</a></p>
+  </section>
+
+  <footer>© 2026 B-Trade GmbH · CarLog</footer>
+</div>
+</body>
+</html>

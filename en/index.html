@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CarLog – Privacy, Support, Imprint</title>
-<meta name="description" content="CarLog – Fuel & Charging Log for iPhone. Privacy policy, support and imprint.">
+<meta name="description" content="CarLog – Fuel & Charging Log for iPhone and Android. Privacy policy, support and imprint.">
 <link rel="icon" href="../icon.png">
 <link rel="apple-touch-icon" href="../icon.png">
 <style>
@@ -57,11 +57,12 @@
       <img src="../icon.png" alt="" width="56" height="56">
       <div>
         <h1>CarLog</h1>
-        <p>Fuel &amp; Charging Log for iPhone</p>
+        <p>Fuel &amp; Charging Log for iPhone and Android</p>
       </div>
     </div>
     <nav aria-label="Pages">
       <a href="#privacy">Privacy</a>
+      <a href="#delete-account">Delete account</a>
       <a href="#support">Support</a>
       <a href="#imprint">Imprint</a>
       <a class="lang" href="../" hreflang="de" lang="de">Deutsch</a>
@@ -71,40 +72,58 @@
   <main>
   <section id="privacy">
     <h2>Privacy Policy</h2>
-    <p class="meta">Last updated: 25 November 2026</p>
-    <p>CarLog works without an account. As long as you do not turn on sync, all your data stays on your iPhone. We cannot see it, we sell nothing and we show no ads.</p>
+    <p class="meta">Last updated: 26 November 2026</p>
+    <p>CarLog works without an account. As long as you do not turn on automatic backup, all your data stays on your device. We cannot see it, we sell nothing and we show no ads.</p>
 
     <div class="table">
       <table>
         <thead><tr><th>Data</th><th>Where it is stored</th><th>Purpose</th></tr></thead>
         <tbody>
-          <tr><td>Vehicles, fuel and charging entries, charging locations</td><td><span class="tag local">iPhone only</span></td><td>Calculate costs and consumption</td></tr>
-          <tr><td>Location when logging a charge</td><td><span class="tag local">iPhone only</span></td><td>Recognise the «Home» charging location; not stored, only compared</td></tr>
-          <tr><td>Email address</td><td><span class="tag opt">only with sync</span><br>Server in Switzerland</td><td>Sign-in with a one-time code</td></tr>
-          <tr><td>Copy of your vehicles, entries and charging locations</td><td><span class="tag opt">only with sync</span><br>Server in Switzerland</td><td>Data backup and sync between your devices</td></tr>
-          <tr><td>Purchase status of CarLog Pro and a random identifier</td><td><span class="tag opt">only with Pro</span><br>App Store and subscription service provider</td><td>Unlock Pro; no payment data</td></tr>
+          <tr><td>Vehicles, fuel and charging entries, charging locations</td><td><span class="tag local">device only</span></td><td>Calculate costs and consumption</td></tr>
+          <tr><td>Location when logging a charge</td><td><span class="tag local">device only</span></td><td>Recognise the «Home» charging location; not stored, only compared</td></tr>
+          <tr><td>Email address</td><td><span class="tag opt">only with backup</span><br>Server in Switzerland</td><td>Sign-in with a one-time code</td></tr>
+          <tr><td>Copy of your vehicles, entries and charging locations</td><td><span class="tag opt">only with backup</span><br>Server in Switzerland</td><td>Data backup and sync between your devices</td></tr>
+          <tr><td>Purchase status of CarLog Pro and a random identifier</td><td><span class="tag opt">only with Pro</span><br>App Store or Google Play and subscription service provider</td><td>Unlock Pro; no payment data</td></tr>
         </tbody>
       </table>
     </div>
 
     <h3>Without an account</h3>
-    <p>The data is stored in a database inside the app. It is included in your iPhone's iCloud backup if you have turned it on. Apple's privacy policy applies to that backup.</p>
+    <p>The data is stored in a database inside the app. It is included in your iCloud backup on iPhone, or in your Google backup on Android, if you have turned it on. Apple's or Google's privacy policy applies to that backup.</p>
 
-    <h3>With sync (optional)</h3>
+    <h3>With automatic backup (optional)</h3>
     <p>When you sign in, we store your email address and a copy of your data with a hosting provider whose data centre is in Switzerland. An email service provider in the EU sends the sign-in code on our behalf. Each account can only see its own data. All transfers are encrypted.</p>
 
     <h3>Subscription</h3>
-    <p>The first 10 entries are free. From the 11th entry and for sync you need CarLog Pro (yearly subscription, CHF 5 per year in Switzerland). Payment is handled entirely by Apple. We receive no payment data. A subscription management service provider (based in the USA) processes a random identifier and the purchase status so the app knows whether Pro is active. Data processing agreements are in place with all service providers; for the USA, the standard contractual clauses apply.</p>
+    <p>The first 10 entries are free. From the 11th entry and for automatic backup you need CarLog Pro (yearly subscription, CHF 5 per year in Switzerland). Payment is handled entirely by Apple (App Store) or Google (Google Play). We receive no payment data. A subscription management service provider (based in the USA) processes a random identifier and the purchase status so the app knows whether Pro is active. Data processing agreements are in place with all service providers; for the USA, the standard contractual clauses apply.</p>
 
     <h3>No tracking</h3>
     <p>CarLog contains no ads, no analytics tools and no tracking across apps or websites. This website does not load anything from third parties either.</p>
 
     <h3>Deletion and your rights</h3>
     <ul>
-      <li>You delete the data on your iPhone by deleting the app.</li>
-      <li>You delete your account and all data on the server in the app under Settings → Sync → Delete account.</li>
+      <li>You delete the data on your device by deleting the app.</li>
+      <li>You delete your account and all data on the server in the app under Settings → Automatic backup → Delete account, or as described under <a href="#delete-account">Delete account</a> below.</li>
       <li>You have the right to access, correct and delete your data under the Swiss Federal Act on Data Protection and, where applicable, the GDPR. To do so, write to the address below.</li>
     </ul>
+  </section>
+
+  <hr>
+
+  <section id="delete-account">
+    <h2>Delete account</h2>
+    <p>How to delete your CarLog account (app «CarLog – Fuel &amp; Charging Log» by B-Trade GmbH) and all data on the server:</p>
+    <h3>In the app</h3>
+    <ul>
+      <li>Settings → Automatic backup → <strong>Delete account</strong> → confirm.</li>
+      <li>Your account, email address and the copy of your vehicles, entries and charging locations are deleted from the server immediately and permanently. The data on your device stays until you delete the app.</li>
+    </ul>
+    <h3>Without the app</h3>
+    <ul>
+      <li>Write from the email address of your account to <a href="mailto:carlog@b-trade.ch?subject=Delete%20account">carlog@b-trade.ch</a> with the subject «Delete account».</li>
+      <li>We delete your account and all data within 30 days and confirm it by email.</li>
+    </ul>
+    <p>Cancel a running subscription separately in the App Store or on Google Play. Apple and Google keep the purchase receipt according to their own rules.</p>
   </section>
   </main>
 
@@ -116,9 +135,9 @@
     <p class="contact"><a href="mailto:carlog@b-trade.ch">carlog@b-trade.ch</a></p>
     <h3>Frequently asked questions</h3>
     <ul>
-      <li><strong>How do I back up my data?</strong> With CarLog Pro: Settings → Sync → Sign in and sync. Your data is then stored safely on a server in Switzerland. Without a subscription it stays in your iPhone's iCloud backup.</li>
-      <li><strong>New iPhone?</strong> Install CarLog and sign in under Settings → Sync with the same email address. Your data comes back automatically.</li>
-      <li><strong>Cancel the subscription?</strong> iPhone Settings → your name → Subscriptions → CarLog.</li>
+      <li><strong>How do I back up my data?</strong> With CarLog Pro: Settings → Automatic backup → turn on and sign in. Your data is then stored safely on a server in Switzerland. Without a subscription it stays in your device backup (iCloud or Google).</li>
+      <li><strong>New device?</strong> Install CarLog and sign in under Settings → Automatic backup with the same email address. Your data comes back automatically.</li>
+      <li><strong>Cancel the subscription?</strong> iPhone: Settings → your name → Subscriptions → CarLog. Android: Play Store → profile picture → Payments &amp; subscriptions → Subscriptions → CarLog.</li>
       <li><strong>Why is «Used» different from «Spent»?</strong> «Spent» is what you paid. «Used» estimates what the kilometres you drove actually cost.</li>
     </ul>
   </section>
